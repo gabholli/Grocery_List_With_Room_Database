@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:layout_marginBottom="46dp"
-        android:text="List of Items(Click on Item to Delete):"
+        android:text="List of Items(Swipe Item To Right To Delete):"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
