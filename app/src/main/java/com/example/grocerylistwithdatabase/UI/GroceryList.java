@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.grocerylistwithdatabase.Adapter.GroceryAdapter;
 import com.example.grocerylistwithdatabase.Database.Repository;
@@ -42,11 +43,16 @@ public class GroceryList extends AppCompatActivity {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Groceries groceries;
-                groceries = new Groceries(addItem.getText().toString());
-                groceriesList.add(groceries);
-                repository.insert(groceries);
-                adapter.notifyDataSetChanged();
+                if (checkForEmptySpaces(addItem.getText().toString())) {
+                    Toast.makeText(GroceryList.this, "Please make proper entry",
+                            Toast.LENGTH_LONG).show();
+                } else {
+                    Groceries groceries;
+                    groceries = new Groceries(addItem.getText().toString());
+                    groceriesList.add(groceries);
+                    repository.insert(groceries);
+                    adapter.notifyDataSetChanged();
+                }
             }
         });
 
@@ -84,6 +90,9 @@ public class GroceryList extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerView);
     }
 
+    public boolean checkForEmptySpaces(String value) {
+        return value.length() > 0 && value.trim().matches("");
+    }
     public void addButton(View view) {
 //        Groceries groceries;
 //        groceries = new Groceries(addItem.getText().toString());
