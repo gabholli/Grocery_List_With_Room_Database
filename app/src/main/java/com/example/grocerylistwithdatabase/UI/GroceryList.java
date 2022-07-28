@@ -91,7 +91,7 @@ public class GroceryList extends AppCompatActivity {
     }
 
     public boolean checkForEmptySpaces(String value) {
-        return value.length() > 0 && value.trim().matches("");
+        return value.length() > 0 && value.trim().matches("") || value.isEmpty();
     }
     public void addButton(View view) {
 //        Groceries groceries;
