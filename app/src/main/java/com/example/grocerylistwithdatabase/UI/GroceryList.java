@@ -20,6 +20,7 @@ import com.example.grocerylistwithdatabase.Database.Repository;
 import com.example.grocerylistwithdatabase.Entity.Groceries;
 import com.example.grocerylistwithdatabase.R;
 
+// Main screen
 public class GroceryList extends AppCompatActivity {
 
     Repository repository;
