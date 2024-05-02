@@ -16,4 +16,4 @@ have a presence on any store due to its basic funcionality unless one makes an e
 ## Authors
 Gabe Hollifield
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the BSD 2-Clause "Simplified" License - see the LICENSE.txt file for details
