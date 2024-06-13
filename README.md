@@ -11,7 +11,7 @@ an item.
 ## Getting Started
 ### Executing program
 - To allow for use, the program downloads onto an Android phone directly from the computer containing the files. The app doesn't
-have a presence on any store due to its basic funcionality unless one makes an executable file
+have a presence on any store due to its basic funcionality.
 
 ## Authors
 Gabe Hollifield
